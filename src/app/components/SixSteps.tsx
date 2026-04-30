@@ -1,12 +1,7 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import processImage1 from 'figma:asset/5d52608e613999e16fea186c963e089769236afa.png';
-import processImage2 from 'figma:asset/0007895e9eadc51ea4240c9d53d980fd2aba6628.png';
-import processImage3 from 'figma:asset/891aa3868cf8f72da2f5b5d14ed25289b257cac6.png';
-import teamImage from 'figma:asset/175c3c2cec0c2bd55f4886ba8863aa87fa44fcb7.png';
-import reportingImage from 'figma:asset/fa1c292e3b3486bfd1a32e47c7936a0c224bb954.png';
-import qualityImage from 'figma:asset/1b46fdd58310600d0a299b0b15e3056cb4941463.png';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 // Компонент циклической схемы маркетинга с анимированной стрелкой
@@ -1138,7 +1133,7 @@ export function SixSteps({ onOpenDiagnostic }: SixStepsProps) {
 
             <div className="hidden lg:flex items-start justify-center lg:justify-end">
               <img
-                src={teamImage}
+                src={getPlaceholderImage("Команда")}
                 alt="Воронка найма сотрудников"
                 className="w-full max-w-xl"
               />
@@ -1190,7 +1185,7 @@ export function SixSteps({ onOpenDiagnostic }: SixStepsProps) {
 
             <div className="hidden lg:flex items-start justify-center lg:justify-end">
               <img
-                src={reportingImage}
+                src={getPlaceholderImage("Отчетность")}
                 alt="Панель управления компанией"
                 className="w-full max-w-xl"
               />

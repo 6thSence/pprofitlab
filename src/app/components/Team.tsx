@@ -1,19 +1,12 @@
 import { useState } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import marinaPhoto from 'figma:asset/6b718ad9ad025efc053843adc6391600e9a1c674.png';
-import nikitaPhoto from 'figma:asset/c41f42c581403ab70b6efb251d90aab2fe6ca9f7.png';
-import annaKoloyarovaPhoto from 'figma:asset/1871f236b0b51b77464451d981d01343eb0a75da.png';
-import dianaPhoto from 'figma:asset/538e28fcd8760443db795f17f4966c8e9bb2380e.png';
-import evgeniaPhoto from 'figma:asset/bf1bf8308c5f6856c93a7de55e278e717ffcdf51.png';
-import nataliaPhoto from 'figma:asset/5105ed9d24f6303fe9996151770572b3aa912992.png';
-import kseniaPhoto from 'figma:asset/5c532552ed52140be499ebfef12174e72e639ce9.png';
-import marinaGolubnichayaPhoto from 'figma:asset/3e6ea5758b70bb83998f1bcbb66e3b40494b6410.png';
+import { getPlaceholderImage } from '../utils/placeholder';
 
 const teamMembers = [
   {
     name: 'Марина Рябова',
     position: 'Финансовый директор',
-    image: marinaPhoto,
+    image: getPlaceholderImage('Марина Рябова'),
     description: 'Эксперт по управленческому учету, финансовому моделированию и стратегическому управлению финансами',
     experience: '20+ лет опыта',
     achievements: [
@@ -28,7 +21,7 @@ const teamMembers = [
   {
     name: 'Анна Колоярова',
     position: 'Операционный директор',
-    image: annaKoloyarovaPhoto,
+    image: getPlaceholderImage('Анна Колоярова'),
     description: 'Эксперт по аналитике бизнес-процессов и построению эффективных кросс-функциональных команд в международных проектах',
     experience: 'MBA Операционное управление',
     achievements: [
@@ -42,7 +35,7 @@ const teamMembers = [
   {
     name: 'Никита Дик',
     position: 'Операционный директор / Эксперт по бизнес-автоматизации и AI-решениям',
-    image: nikitaPhoto,
+    image: getPlaceholderImage('Никита Дик'),
     description: 'Специалист по систематизации процессов, финансовому учёту и созданию умных управленческих систем на базе нейросетей и автоматизаций',
     experience: '8+ лет опыта',
     achievements: [
@@ -56,7 +49,7 @@ const teamMembers = [
   {
     name: 'Диана Багдасарян',
     position: 'Юрист-практик в digital-среде',
-    image: dianaPhoto,
+    image: getPlaceholderImage('Диана'),
     description: 'Эксперт по цифровому праву с фокусом на инфлюенс-маркетинг, онлайн-бизнес и интеллектуальную собственность',
     experience: '6+ лет юридической практики в digital',
     achievements: [
@@ -70,7 +63,7 @@ const teamMembers = [
   {
     name: 'Ксения Куликова',
     position: 'Руководитель направления бизнес-ассистентов',
-    image: kseniaPhoto,
+    image: getPlaceholderImage('Ксения'),
     description: 'Эксперт по подбору, обучению и сопровождению ассистентов для предпринимателей. Превращает новичков в самостоятельных, ценных специалистов',
     experience: '3+ года опыта в управлении командой ассистентов',
     achievements: [
@@ -84,7 +77,7 @@ const teamMembers = [
   {
     name: 'Наталья Панфилова',
     position: 'Технический директор',
-    image: nataliaPhoto,
+    image: getPlaceholderImage('Наталия'),
     description: 'Эксперт по автоматизации, CRM-системам и технической сборке digital-проектов. Собирает из хаоса стройную систему, которая работает без сбоев',
     experience: '7+ лет опыта в техническом управлении',
     achievements: [
@@ -98,7 +91,7 @@ const teamMembers = [
   {
     name: 'Евгения Фармани',
     position: 'Дизайнер сайтов и визуала',
-    image: evgeniaPhoto,
+    image: getPlaceholderImage('Евгения'),
     description: 'Эксперт по digital-дизайну с акцентом на маркетинговую эффективность. Работает с крупными блогерами и экспертами',
     experience: '5+ лет опыта в веб-дизайне',
     achievements: [
@@ -112,7 +105,7 @@ const teamMembers = [
   {
     name: 'Голубничая Марина',
     position: 'Специалист по трафику (ТГ, Ютуб, ВК)',
-    image: marinaGolubnichayaPhoto,
+    image: getPlaceholderImage('Марина Голубничая'),
     description: 'Эксперт по привлечению трафика и продвижению в социальных сетях с фокусом на рост узнаваемости и продаж',
     experience: '6+ лет опыта',
     achievements: [

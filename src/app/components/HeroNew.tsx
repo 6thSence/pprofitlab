@@ -1,5 +1,5 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import daryaPhoto from 'figma:asset/c55352d006d4add25e49f74123e42471be34c248.png';
 import { useEffect, useState, useRef } from 'react';
 
 interface HeroNewProps {
@@ -70,7 +70,7 @@ export function HeroNew({ onOpenDiagnostic }: HeroNewProps) {
       <div className="hidden lg:block absolute inset-0 z-0">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img 
-            src={daryaPhoto}
+            src={getPlaceholderImage("Дарья")}
             alt="Дарья Пушкарская" 
             className="absolute right-0 top-0 w-auto h-full object-contain object-right"
             style={{

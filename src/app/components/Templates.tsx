@@ -1,5 +1,5 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import templatesImage from 'figma:asset/6714959f3bfc0f9fa60bdddfb4822473f7e1cc2b.png';
 
 interface TemplatesProps {
   onOpenPopup: (id: string) => void;
@@ -90,7 +90,7 @@ export function Templates({ onOpenPopup }: TemplatesProps) {
             {/* Мобильная версия - сначала картинка */}
             <div className="lg:hidden flex items-center justify-center order-1">
               <ImageWithFallback 
-                src={templatesImage}
+                src={getPlaceholderImage("Шаблоны")}
                 alt="162 шаблона для систематизации работы отделов"
                 className="w-full animate-fade-in"
                 style={{ animation: 'float-gentle 6s ease-in-out infinite', transform: 'scale(1.5)' }}
@@ -130,7 +130,7 @@ export function Templates({ onOpenPopup }: TemplatesProps) {
             {/* Десктопная версия - картинка справа */}
             <div className="hidden lg:flex items-center justify-center lg:justify-end order-3 lg:order-2">
               <ImageWithFallback 
-                src={templatesImage}
+                src={getPlaceholderImage("Шаблоны")}
                 alt="162 шаблона для систематизации работы отделов"
                 className="w-full animate-fade-in"
                 style={{ animation: 'float-gentle 6s ease-in-out infinite', transform: 'scale(1.5)' }}

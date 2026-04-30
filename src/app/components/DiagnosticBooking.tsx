@@ -1,7 +1,7 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 'use client';
 
 import { useState, useEffect } from 'react';
-import diagnosticPhoto from 'figma:asset/d930613217f861447711475757ce27ddd8bf3071.png';
 
 export function DiagnosticBooking() {
   const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 });
@@ -30,7 +30,7 @@ export function DiagnosticBooking() {
       {/* Фоновое изображение */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={diagnosticPhoto}
+          src={getPlaceholderImage("Диагностика")}
           alt="Дарья Пушкарская"
           className="w-full h-full object-cover"
         />

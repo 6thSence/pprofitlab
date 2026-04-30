@@ -1,24 +1,6 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState } from 'react';
-import nataliaPhoto from 'figma:asset/74df768816fbfca20470ff8f8056b8a5e8b7848d.png';
-import annaPhoto from 'figma:asset/e6a7e72c889a9e35034b4dfaa4ea34b04930199b.png';
-import yuliaPhoto from 'figma:asset/a31c366b75bef27154f00ea4a24682a7b50b64ad.png';
-import elenaPhoto from 'figma:asset/499111c489ec3f57d5463cf17b8204c1b69359a2.png';
-import tatjanaPhoto from 'figma:asset/128ac8e98fd22036967ff3e629dee82c9a472ead.png';
-import dianaPhoto from 'figma:asset/8191298025a5a4864c7318f149c0935e65b8a1db.png';
-import nataliaIvanovaPhoto from 'figma:asset/f2ae30c64997680ae2c7ca22b83b42d937320394.png';
-import tatianaVoroninaPhoto from 'figma:asset/ac0a41326e7e1391db89503030ae259378212c70.png';
-import muratPhoto from 'figma:asset/4d59e5667911260dcb1a47b271c07074e772e73c.png';
-import viacheslavPhoto from 'figma:asset/c7ec1850ff46cde2f409d976498adae8ff0267c8.png';
-import dmitryPhoto from 'figma:asset/b5993405d8621d6ac1b627ceed2f0acf65b5d75e.png';
-import alexandrPhoto from 'figma:asset/35d33089fe666066725eba2034e71c426a24cdb1.png';
-import yuliaElanPhoto from 'figma:asset/f1f6bddf63f7c9563950ea906839c41bb0468aed.png';
-import yuliaDegtevaPhoto from 'figma:asset/d66c3e0badc0f498de6946202c055eea15a8cf8c.png';
-import anastasiaPhoto from 'figma:asset/e6b268ebc23c6ceac6864d7b6a96e75393b82d75.png';
-import mariaSemkovaPhoto from 'figma:asset/35715f6ee0cbcc2066af84fdb5a0695eecaee676.png';
-import annaKoloyarovaPhoto from 'figma:asset/1848416c822f08511754d314a17f8cfeb3ec3415.png';
-import viktoriaPhoto from 'figma:asset/b179363b27bc0656cb27f9e9be17d5ffa1dd314c.png';
-import tatianaMarichevaPhoto from 'figma:asset/4b74b50500a83aab8e290b08cf9941ec4208a49f.png';
+import { getPlaceholderImage } from '../utils/placeholder';
 
 interface VideoTestimonial {
   name: string;
@@ -38,7 +20,7 @@ const testimonials: VideoTestimonial[] = [
   {
     name: 'Вячеслав Дёмин',
     description: 'Со-владелец школы психологии Ксении Деминой',
-    image: viacheslavPhoto,
+    image: getPlaceholderImage('Вячеслав Дёмин'),
     videoId: 'https://youtu.be/w5CEThw8-EE?si=3BJZnQ5kV6XpdwjE',
     category: 'Психология',
     featured: true
@@ -46,28 +28,28 @@ const testimonials: VideoTestimonial[] = [
   {
     name: 'Дмитрий Щербинин',
     description: 'Сооснователь школы Натали Щербининой',
-    image: dmitryPhoto,
+    image: getPlaceholderImage('Дмитрий Щербинин'),
     videoId: 'https://youtu.be/PD4LcMUnJeY?si=xvSG952Ck_b8y6r9',
     category: 'Бизнес'
   },
   {
     name: 'Александр Чуваев',
     description: 'Директор по маркетингу',
-    image: alexandrPhoto,
+    image: getPlaceholderImage('Александр Чуваев'),
     videoId: 'https://youtu.be/9_SlPmopP8k?si=l9jdWaMMq7thymgy',
     category: 'Маркетинг'
   },
   {
     name: 'Наталья Юрьева',
     description: 'Собственник школы "Живопись маслом"',
-    image: nataliaPhoto,
+    image: getPlaceholderImage('Наталья Юрьева'),
     videoId: 'https://youtu.be/4m3kmbh2AIE?si=epMSDeMEfOULZS4w',
     category: 'Искусство'
   },
   {
     name: 'Татьяна Маричева',
     description: 'Собственник школы продюсеров',
-    image: tatianaMarichevaPhoto,
+    image: getPlaceholderImage('Татьяна Маричева'),
     videoId: 'https://youtu.be/1KMeEO--En8',
     category: 'Продюсеры',
     featured: true
@@ -75,21 +57,21 @@ const testimonials: VideoTestimonial[] = [
   {
     name: 'Анна Кузнецова',
     description: 'Собственник школы по продажам "Учимся продавать"',
-    image: annaPhoto,
+    image: getPlaceholderImage('Анна Кузнецова'),
     videoId: 'https://youtu.be/QD4ljQxxaiE',
     category: 'Продажи'
   },
   {
     name: 'Юлия Евенко',
     description: 'Собственник школы и сделали панель нормального маникюра',
-    image: yuliaPhoto,
+    image: getPlaceholderImage('Юлия Евенко'),
     videoId: 'https://youtu.be/rBCEII9uABQ',
     category: 'Маникюр'
   },
   {
     name: 'Диана Якушева',
     description: 'Руководитель отдела маркетинга в школе "Живопись маслом"',
-    image: dianaPhoto,
+    image: getPlaceholderImage('Диана Якушева'),
     videoId: 'https://youtu.be/AZwX0rjOTa0?si=H1EHNGoDPiFNawq8',
     category: 'Маркетинг',
     featured: true
@@ -97,49 +79,49 @@ const testimonials: VideoTestimonial[] = [
   {
     name: 'Татьяна Николова',
     description: 'Собственник и продюсер школы инвестиций',
-    image: tatjanaPhoto,
+    image: getPlaceholderImage('Татьяна Николова'),
     videoId: 'https://youtu.be/VoqniZjChGU',
     category: 'Инвестиции'
   },
   {
     name: 'Елена Шустикова',
     description: 'Собственник школы дизайна',
-    image: elenaPhoto,
+    image: getPlaceholderImage('Елена Шустикова'),
     videoId: 'https://youtu.be/S0PtUSVnvUs?si=vhqasUvgwI1SX6TL',
     category: 'Дизайн'
   },
   {
     name: 'Наталья Иванова',
     description: 'Бизнес инженер',
-    image: nataliaIvanovaPhoto,
+    image: getPlaceholderImage('Наталья Иванова'),
     videoId: 'https://youtu.be/JM_Dgy_qzZA?si=2Ov-ABpdwzRft4V6',
     category: 'Бизнес'
   },
   {
     name: 'Юлия Дегтева',
     description: 'Собственник HR-агентства',
-    image: yuliaDegtevaPhoto,
+    image: getPlaceholderImage('Юлия Дегтева'),
     videoId: 'https://youtu.be/HyQ1mTRGgYs?si=fMzeJD5H06LCf14E',
     category: 'HR'
   },
   {
     name: 'Мурат Танкибайев',
     description: 'Собственник Школы английского языка',
-    image: muratPhoto,
+    image: getPlaceholderImage('Мурат Танкибайев'),
     videoId: 'https://youtu.be/BkpOWzqBr30?si=rJ-3kR-fKnaUyqHe',
     category: 'Английский язык'
   },
   {
     name: 'Юлия Элан',
     description: 'Лидер сообщества консультантов по фэн-шуй',
-    image: yuliaElanPhoto,
+    image: getPlaceholderImage('Юлия Элан'),
     videoId: 'https://youtu.be/lSzJHvRPPm4?si=qfUgJ5JuOL5EAZzX',
     category: 'Фэн-шуй'
   },
   {
     name: 'Татьяна Воронина',
     description: 'Проджект Школы Модного бизнеса',
-    image: tatianaVoroninaPhoto,
+    image: getPlaceholderImage('Татьяна Воронина'),
     videoId: 'https://youtu.be/jOfBuIKpPPc?si=qXDGUsZTbJOLB8Pz',
     category: 'Модный бизнес',
     featured: true
@@ -147,28 +129,28 @@ const testimonials: VideoTestimonial[] = [
   {
     name: 'Анастасия Ушакова',
     description: 'Продюсер онлайн-школы CrystalLand',
-    image: anastasiaPhoto,
+    image: getPlaceholderImage('Анастасия Ушакова'),
     videoId: 'https://youtu.be/TtwmNIBIARM?si=k4TppTMdXBG_WEak',
     category: 'Продюсеры'
   },
   {
     name: 'Мария Семкова',
     description: 'Руководитель школы психологии Ксении Деминой',
-    image: mariaSemkovaPhoto,
+    image: getPlaceholderImage('Мария Семкова'),
     videoId: 'https://youtu.be/VUjSDhkCfzA',
     category: 'Психология'
   },
   {
     name: 'Анна Колоярова',
     description: 'Операционный директор',
-    image: annaKoloyarovaPhoto,
+    image: getPlaceholderImage('Анна Колоярова'),
     videoId: 'https://youtu.be/tWqpwEmBRkM',
     category: 'Бизнес'
   },
   {
     name: 'Виктория Грохотова',
     description: 'Бизнес-инженер',
-    image: viktoriaPhoto,
+    image: getPlaceholderImage('Виктория Грохотова'),
     videoId: 'https://youtu.be/RU8k1voPHFs?si=AmY9_AYf7KXNJOtH',
     category: 'Бизнес'
   }

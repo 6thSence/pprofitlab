@@ -1,8 +1,5 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import daryaPhoto from 'figma:asset/c21177797cf316cbef2e1c1a1b098ef556b3f8c7.png';
-import skolkovoLogo from 'figma:asset/2bec1321fc0d1166dbfbac9e7ba66dd6e5e5ca01.png';
-import hseLogo from 'figma:asset/dc7ab46378cd7c00f10b06da699bf8ebe9a6477b.png';
-import centralUniversityLogo from 'figma:asset/afea57f9943d929bd43b3e8592227f749f4b9f91.png';
 
 export function AboutDarya() {
   const keyRoles = [
@@ -64,7 +61,7 @@ export function AboutDarya() {
               <div className="lg:hidden relative animate-slide-in-right">
                 <div className="rounded-large overflow-hidden bg-white">
                   <img 
-                    src={daryaPhoto}
+                    src={getPlaceholderImage("Дарья Пушкарская")}
                     alt="Дарья Пушкарская"
                     className="w-full h-auto object-contain"
                   />
@@ -94,17 +91,17 @@ export function AboutDarya() {
               <div className="pt-2">
                 <div className="flex items-center gap-6">
                   <ImageWithFallback 
-                    src={skolkovoLogo}
+                    src={getPlaceholderImage("Skolkovo")}
                     alt="Сколково"
                     className="h-10 w-auto object-contain"
                   />
                   <ImageWithFallback 
-                    src={hseLogo}
+                    src={getPlaceholderImage("HSE")}
                     alt="Высшая школа экономики"
                     className="h-12 w-auto object-contain"
                   />
                   <ImageWithFallback 
-                    src={centralUniversityLogo}
+                    src={getPlaceholderImage("Central University")}
                     alt="Центральный университет"
                     className="h-14 w-auto object-contain"
                   />
@@ -186,7 +183,7 @@ export function AboutDarya() {
             <div className="hidden lg:block relative animate-slide-in-right lg:sticky lg:top-8">
               <div className="rounded-large overflow-hidden bg-white">
                 <img 
-                  src={daryaPhoto}
+                  src={getPlaceholderImage("Дарья Пушкарская")}
                   alt="Дарья Пушкарская"
                   className="w-full h-auto object-contain"
                 />

@@ -1,13 +1,6 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 import { useState } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import nataliaPhoto from 'figma:asset/74df768816fbfca20470ff8f8056b8a5e8b7848d.png';
-import alexandraPhoto from 'figma:asset/7fe9eadbfcf4b5c43b575221d71e20afa6811d5f.png';
-import annaPhoto from 'figma:asset/e6a7e72c889a9e35034b4dfaa4ea34b04930199b.png';
-import yuliaPhoto from 'figma:asset/24be053f4746b87bb53439ab67730c502d158694.png';
-import elenaPhoto from 'figma:asset/499111c489ec3f57d5463cf17b8204c1b69359a2.png';
-import tatjanaPhoto from 'figma:asset/128ac8e98fd22036967ff3e629dee82c9a472ead.png';
-import viacheslavPhoto from 'figma:asset/c7ec1850ff46cde2f409d976498adae8ff0267c8.png';
-import dmitryPhoto from 'figma:asset/b5993405d8621d6ac1b627ceed2f0acf65b5d75e.png';
 
 interface ClientCase {
   name: string;
@@ -21,7 +14,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Дмитрий Щербинин',
     role: 'Сооснователь школы Натали Щербининой',
-    image: dmitryPhoto,
+    image: getPlaceholderImage("Дмитрий"),
     before: [
       'Много вопросов и сомнений, сложности с принятием решений',
       'Нет ясности, куда двигаться и как правильно поступить в сложной ситуации',
@@ -44,7 +37,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Александра Афанасьева',
     role: 'Школа Модного Бизнеса',
-    image: alexandraPhoto,
+    image: getPlaceholderImage("Александра"),
     before: [
       'Не понятной есть структура, непонятно, что в нашем отделе, что кому подчиняется',
       'Хаотический команды результат сотрудники, спасовавшись, не ясно какие ситрудники выполняют какие статистика, как занимаюсь ту должность и та',
@@ -64,7 +57,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Вячеслав Дёмин',
     role: 'Со-владелец школы психологии Ксении Деминой',
-    image: viacheslavPhoto,
+    image: getPlaceholderImage("Вячеслав"),
     before: [
       'Нет понимания, как искать и оценивать операционного директора',
       'Сложности с наймом: нет профиля должности, критериев и системы оценки',
@@ -85,7 +78,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Наталья Юрьева',
     role: 'Собственник школы "Живопись маслом"',
-    image: nataliaPhoto,
+    image: getPlaceholderImage("Наталья"),
     before: [
       'Хаотическая систематизация в бизнесе',
       'Мысли в закрытом проекте',
@@ -105,7 +98,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Кузнецова Анна',
     role: 'Собственник школы продаж',
-    image: annaPhoto,
+    image: getPlaceholderImage("Анна"),
     before: [
       'Собственник давала почевика',
       'Хотела делегировать рутину'
@@ -123,7 +116,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Юлия Евенко',
     role: 'Руководитель, Сеть школ нормального маникюра ногтей и эскиз',
-    image: yuliaPhoto,
+    image: getPlaceholderImage("Юлия"),
     before: [
       'Отсутствие отчетности',
       'Плохое понимание, как это организовать'
@@ -137,7 +130,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Елена Шустикова',
     role: 'Собственник школы дизайна',
-    image: elenaPhoto,
+    image: getPlaceholderImage("Елена"),
     before: [
       'Не понимала организационную структуру'
     ],
@@ -151,7 +144,7 @@ const clientCases: ClientCase[] = [
   {
     name: 'Татьяна Николова',
     role: 'Собственник и продюсер школы инвестиций',
-    image: tatjanaPhoto,
+    image: getPlaceholderImage("Татьяна"),
     before: [
       'Отсутствие управленческой отчетности',
       'Нет понимание организационной схемы компании'

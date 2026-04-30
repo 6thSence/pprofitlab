@@ -1,8 +1,8 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 'use client';
 
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
-import diagnosticPhoto from 'figma:asset/d930613217f861447711475757ce27ddd8bf3071.png';
 
 interface ExitPopupProps {
   onOpenDiagnostic?: () => void;
@@ -95,7 +95,7 @@ export function ExitPopup({ onOpenDiagnostic }: ExitPopupProps = {}) {
           {/* Фоновое изображение */}
           <div className="absolute inset-0 z-0">
             <img 
-              src={diagnosticPhoto}
+              src={getPlaceholderImage("Диагностика")}
               alt="Дарья Пушкарская"
               className="w-full h-full object-cover"
             />

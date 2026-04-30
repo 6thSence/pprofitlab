@@ -1,7 +1,7 @@
+import { getPlaceholderImage } from '../utils/placeholder';
 'use client';
 
 import { useState, useEffect } from 'react';
-import diagnosticPhoto from 'figma:asset/d930613217f861447711475757ce27ddd8bf3071.png';
 
 interface DiagnosticModalProps {
   isOpen: boolean;
@@ -70,7 +70,7 @@ export function DiagnosticModal({ isOpen, onClose }: DiagnosticModalProps) {
         {/* Background Image */}
         <div className="absolute inset-0 z-0 rounded-3xl overflow-hidden">
           <img 
-            src={diagnosticPhoto}
+            src={getPlaceholderImage("Диагностика")}
             alt="Дарья Пушкарская"
             className="w-full h-full object-cover"
           />
